@@ -2,10 +2,69 @@
 <html>
 <head>
     <title>EAD Store</title>
+    <link rel="stylesheet" href="assets\css\style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="nav" style="background-color: black;">
+        <img id="logo-ead" src="assets\img\logo-ead.png">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="profile.html">Profile</a>
+        <a class="nav-link" href="product.html">Products</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6" class="left-side"> 
+            <div class="iframe-ead">
+                <iframe src="http://bit.ly/VideoEAD2020" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="col-sm-6" class="right-side">
+            <div class="form-group">
+                <form action="">
+                    <b>Registrasi Data Pelanggan</b>
+                    <table>
+                        <tr>
+                            <td><label for="nama"></label>Nama</td>
+                            <td><input type="text" name="nama" id="nama" placeholder="Nama anda.."></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telp">Nomor.HP</label></td>
+                            <td><input type="text" name="telp" id="telp"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat</label></td>
+                            <td><textarea name="alamat" id="alamat" cols="18"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pembayaran">Pembayaran</label></td>
+                            <td>
+                                <input type="radio" name="pembayaran" id="pembayaran"> Cash
+                                <input type="radio" name="pembayaran" id="pembayaran"> Credit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesanan">Kategori Pesanan</label></td>
+                            <td>
+                                <select name="pesanan" id="pesanan">
+                                    <option value="komputer">Komputer</option>
+                                    <option value="keyboard">Keyboard</option>
+                                    <option value="mouse">Mouse</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="button" class="btn btn-primary">Kirim</button>
+                </form>
+            </div>
+          </div>          
+        </div>
+      </div>
+
+    
+
     
 </body>
 </html>
