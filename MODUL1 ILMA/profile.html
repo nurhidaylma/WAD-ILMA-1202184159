@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>EAD Store</title>
-    <link rel="stylesheet" href="assets\css\style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="nav" style="background-color: black; padding: 10px;">
-        <img id="logo-ead" src="assets\img\logo-ead.png">
-        <a class="nav-link" href="home.html">Home</a>
-        <a class="nav-link" active href="profile.html">Profile</a>
-        <a class="nav-link" href="product.html">Products</a>
-    </nav>
+<body style="background-color: rgb(245, 245, 245);">
+    <div class="container-fluid">
+        <div class="row">  
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <img id="logo-ead" src="assets\img\logo-ead.png" width="100px">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link" href="home.html">Home </a>
+                        <a class="nav-link active" href="#">Profile <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="product.html">Product</a>                        
+                      </div>
+                    </div>
+                  </nav>
+            </div>            
+        </div>        
+    </div>
 
-    <div class="row justify-content-center">
-        <div class="card" style="width: 40rem; margin-top: 20px;" class="col auto">
-            <img src="assets\img\logo-ead.png" class="card-img-top" alt="Logo EAD">
-            <div class="card-body">          
-              <p class="card-text">EAD Store merupakan toko elektronik yang menjual barang-barang sebagai berikut:</p>
-              <ol>
-                  <li>Komputer</li>
-                  <li>Keyboard</li>
-                  <li>Mouse</li>
-              </ol>
-              <p class="card-text">Merk yang tersedia di EAD Store antara lain:</p>
-              <ul>
-                  <li>HP</li>
-                  <li>Asus</li>
-                  <li>Logitech</li>
-                  <li>Dell</li>
-                  <li>Lenovo</li>
-                  <li>Apple</li>
-              </ul>          
-            </div>
+    <div class="container">
+        <div class="row">
+            <div class="card" style="width: 40rem; margin-top: 20px; margin-left: 250px;">
+                <div class="card-header text-center">
+                    <img src="assets\img\logo-ead.png" class="card-img-top" alt="Logo EAD" style="width: 300px; align-items: center;">
+                </div>
+                <div class="card-body">          
+                    <p class="card-text">EAD Store merupakan toko elektronik yang menjual barang-barang sebagai berikut:</p>
+                    <ol>
+                        <li>Komputer</li>
+                        <li>Keyboard</li>
+                        <li>Mouse</li>
+                    </ol>
+                    <p class="card-text">Merk yang tersedia di EAD Store antara lain:</p>
+                    <ul>
+                        <li>HP</li>
+                        <li>Asus</li>
+                        <li>Logitech</li>
+                        <li>Dell</li>
+                        <li>Lenovo</li>
+                        <li>Apple</li>
+                    </ul>          
+                  </div>
+              </div>
         </div>
     </div>
     
