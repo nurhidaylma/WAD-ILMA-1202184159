@@ -1,92 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EAD Store</title>
-    <link rel="stylesheet" href="assets\css\style.css">
     <style>
-        table {
-            margin-top: 50px;
-        }        
-        iframe {
-            width: 400px; 
-            height: 300px;
-            padding: 50px;            
-            align-content: center;
+        .left-side {
+            background-color: rgb(227, 227, 227); 
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .right-side {
+            background-color: white; 
+            margin-top: 30px; 
+            padding: 40px;
+        }
+
+        iframe{
+            width:400px;
+            height: 200px;                    
         }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-
-<body style="background-color: aliceblue;">
+<body style="background-color: rgb(245, 245, 245);">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row">  
             <div class="col-md-12">
-                <nav class="nav" style="background-color: black; padding: 10px;">
-                    <img id="logo-ead" src="assets\img\logo-ead.png">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="profile.html">Profile</a>
-                    <a class="nav-link" href="product.html">Products</a>
-                </nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <img id="logo-ead" src="assets\img\logo-ead.png" width="100px">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="profile.html">Profile</a>
+                        <a class="nav-link" href="product.html">Product</a>                        
+                      </div>
+                    </div>
+                  </nav>
+            </div>            
+        </div>        
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 left-side" style="margin-left:80px;">
+                <iframe src="http://bit.ly/VideoEAD2020" frameborder="0"></iframe>
             </div>
-        </div>            
-    
-        <div class="row" >
-          <div class="col-md-6 my-auto" style="background-color:lightgrey;">             
-                <iframe src="http://bit.ly/VideoEAD2020" frameborder="0"></iframe>        
-          </div>
-          <div class="col-md-6 my-auto" style="background-color: white;">            
-            <form action="">                    
-                <div class="form-group">
-                    <table>
-                        <tr>
-                            <th colspan="2">Registrasi Data Pelanggan</th>
-                        </tr>
-                        <tr>
-                            <td><label for="nama"></label>Nama</td>
-                            <td><input type="text" class="form-control" id="nama" placeholder="Nama anda.." value="Ilma"></td>                            
-                        </tr>
-                        <tr>
-                            <td><label for="telp">Nomor.HP</label></td>
-                            <td><input type="text" class="form-control" id="telp" value="082219872990"></td>                            
-                        </tr>
-                        <tr>
-                            <td><label for="alamat">Alamat</label></td>
-                            <td><textarea class="form-control" id="alamat" rows="3" cols="18"></textarea></td>                            
-                        </tr>
-                        <tr>
-                            <td><label for="pembayaran">Pembayaran</label></td>
-                            <td>
-                                <input type="radio" name="pembayaran" id="pembayaran1" value="cash">
-                                <label class="form-check-label" for="pembayaran1">
-                                    Cash
-                                </label>
-                                <input type="radio" name="pembayaran" id="pembayaran2" value="credit">                                
-                                <label class="form-check-label" for="pembayaran2">
-                                    Credit
-                                </label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><label for="pesanan">Kategori Pesanan</label></td>
-                            <td>
-                                <select class="form-control form-control-sm" name="pesanan" id="pesanan">
-                                    <option value="komputer">Komputer</option>
-                                    <option value="keyboard">Keyboard</option>
-                                    <option value="mouse">Mouse</option>
-                                </select>                                
-                            </td>
-                        </tr>
-                    </table>
-                    <button type="button" class="btn btn-primary" style="width: 350px; margin-top: 10px;">Kirim</button>
-                </div>
-            </form>
-          </div>          
+
+            <div class="col-md-5 right-side">
+                <h4 align="center">Registrasi Data Pelanggan</h4>
+                <form action="" style="padding-left: 20px;">
+                    <div class="form-group row">
+                      <label for="nama" class="col-sm-5 col-form-label">Nama</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama anda.." value="Ilma">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="telp" class="col-sm-5 col-form-label">No.HP</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" name="telp" id="telp" value="082219567444">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="alamat" class="col-sm-5 col-form-label">Alamat</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" id="alamat" rows="3"></textarea>
+                        </div>
+                      </div>
+                    <fieldset class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-5 pt-0">Pembayaran</legend>
+                        <div class="col-sm-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="pembayaran1" name="pembayaran" class="custom-control-input" value="cash">
+                                <label class="custom-control-label" for="pembayaran1">Cash</label>
+                              </div>
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="pembayaran" name="pembayaran2" class="custom-control-input" value="credit">
+                                <label class="custom-control-label" for="pembayaran2">Credit</label>
+                              </div>        
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <label for="kategori" class="col-sm-5 col-form-label">Kategori Pesanan</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="kategori">
+                                <option>Komputer</option>
+                                <option>Keyboard</option>
+                                <option>Mouse</option>                                
+                            </select>
+                            </div>
+                      </div>                    
+                    <div class="form-group row">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" style="width: 340px;">Kirim</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
         </div>
-      </div>
-
-    
-
-    
+    </div>
 </body>
 </html>
