@@ -3,29 +3,36 @@
 <head>
     <title>EAD Store</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <style type="text/css">
+        #header-table {
+            text-align: center;            
+            transform: translateY(-50%);
+            top: 50%;
+        } 
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav" style="background-color: black;">
+    <nav class="nav" style="background-color: black; padding: 10px;">
         <img id="logo-ead" src="assets\img\logo-ead.png">
         <a class="nav-link" href="home.html">Home</a>
-        <a class="nav-link" active href="profile.html">Profile</a>
-        <a class="nav-link" href="product.html">Products</a>
+        <a class="nav-link" href="profile.html">Profile</a>
+        <a class="nav-link" active href="#">Products</a>
     </nav>
 
     <h3 style="text-align: center;">Daftar Barang</h3>
 
     <div class="row justify-content-center">
         <div class="col-auto">
-            <table class="table table-bordered table-striped" style="width: auto; align-content: center;">
+            <table class="table table-bordered table-striped" style="width: auto;">
                 <thead>
-                    <tr>
+                    <tr id="header-table">
                         <th  rowspan="2">Ketersediaan Barang</th>
                         <th  rowspan="2">Nama Barang</th>
                         <th  colspan="3">Detail Barang</th>            
                     </tr>
-                    <tr>
+                    <tr style="text-align: center;">
                         <th>Merk</th>
                         <th>Jenis</th>
                         <th>Harga</th>

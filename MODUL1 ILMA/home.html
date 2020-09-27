@@ -3,62 +3,84 @@
 <head>
     <title>EAD Store</title>
     <link rel="stylesheet" href="assets\css\style.css">
+    <style>
+        table {
+            margin-top: 50px;
+        }        
+        iframe {
+            width: 400px; 
+            height: 300px;
+            padding: 50px;            
+            align-content: center;
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav class="nav" style="background-color: black;">
-        <img id="logo-ead" src="assets\img\logo-ead.png">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="profile.html">Profile</a>
-        <a class="nav-link" href="product.html">Products</a>
-    </nav>
 
-    <div class="container">
+<body style="background-color: aliceblue;">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6" class="left-side"> 
-            <div class="iframe-ead">
-                <iframe src="http://bit.ly/VideoEAD2020" frameborder="0"></iframe>
+            <div class="col-md-12">
+                <nav class="nav" style="background-color: black; padding: 10px;">
+                    <img id="logo-ead" src="assets\img\logo-ead.png">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="profile.html">Profile</a>
+                    <a class="nav-link" href="product.html">Products</a>
+                </nav>
             </div>
+        </div>            
+    
+        <div class="row" >
+          <div class="col-md-6 my-auto" style="background-color:lightgrey;">             
+                <iframe src="http://bit.ly/VideoEAD2020" frameborder="0"></iframe>        
           </div>
-          <div class="col-sm-6" class="right-side">
-            <div class="form-group">
-                <form action="">
-                    <b>Registrasi Data Pelanggan</b>
+          <div class="col-md-6 my-auto" style="background-color: white;">            
+            <form action="">                    
+                <div class="form-group">
                     <table>
                         <tr>
+                            <th colspan="2">Registrasi Data Pelanggan</th>
+                        </tr>
+                        <tr>
                             <td><label for="nama"></label>Nama</td>
-                            <td><input type="text" name="nama" id="nama" placeholder="Nama anda.."></td>
+                            <td><input type="text" class="form-control" id="nama" placeholder="Nama anda.." value="Ilma"></td>                            
                         </tr>
                         <tr>
                             <td><label for="telp">Nomor.HP</label></td>
-                            <td><input type="text" name="telp" id="telp"></td>
+                            <td><input type="text" class="form-control" id="telp" value="082219872990"></td>                            
                         </tr>
                         <tr>
                             <td><label for="alamat">Alamat</label></td>
-                            <td><textarea name="alamat" id="alamat" cols="18"></textarea></td>
+                            <td><textarea class="form-control" id="alamat" rows="3" cols="18"></textarea></td>                            
                         </tr>
                         <tr>
                             <td><label for="pembayaran">Pembayaran</label></td>
                             <td>
-                                <input type="radio" name="pembayaran" id="pembayaran"> Cash
-                                <input type="radio" name="pembayaran" id="pembayaran"> Credit
+                                <input type="radio" name="pembayaran" id="pembayaran1" value="cash">
+                                <label class="form-check-label" for="pembayaran1">
+                                    Cash
+                                </label>
+                                <input type="radio" name="pembayaran" id="pembayaran2" value="credit">                                
+                                <label class="form-check-label" for="pembayaran2">
+                                    Credit
+                                </label>
                             </td>
                         </tr>
                         <tr>
                             <td><label for="pesanan">Kategori Pesanan</label></td>
                             <td>
-                                <select name="pesanan" id="pesanan">
+                                <select class="form-control form-control-sm" name="pesanan" id="pesanan">
                                     <option value="komputer">Komputer</option>
                                     <option value="keyboard">Keyboard</option>
                                     <option value="mouse">Mouse</option>
-                                </select>
+                                </select>                                
                             </td>
                         </tr>
                     </table>
-                    <button type="button" class="btn btn-primary">Kirim</button>
-                </form>
-            </div>
+                    <button type="button" class="btn btn-primary" style="width: 350px; margin-top: 10px;">Kirim</button>
+                </div>
+            </form>
           </div>          
         </div>
       </div>

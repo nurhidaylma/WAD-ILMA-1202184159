@@ -1,39 +1,13 @@
-body {
+/* body {
     background-color: black;
-}
+} */
 
 #logo-ead{
     width: 150px; 
-    height: 50px;
+    height: 30px;
     margin-left: 20px;
 }
 
-.container {
-    margin-top: 20px;
+.nav a {
+    vertical-align: middle;
 }
-
-.left-side {
-    background-color: azure;
-}
-
-.right-side {
-    background-color: white;
-}
-
-.iframe-ead {
-    margin-top: 100px;
-    margin-left: 200px;
-}
-
-.form-registrasi {
-    margin-top: 100px;
-    margin-left: 500px;
-}
-
-.card img {
-    width: 150px;
-    height: 50px;
-    align-items: center;
-}
-
-
