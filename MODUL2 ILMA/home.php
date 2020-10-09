@@ -9,29 +9,33 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12" style="background-color:blue;">
-                <nav class="navbar navbar-expand-lg justify-content-center">                                        
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-link" href="booking.php">Booking</a>                        
-                    </div>                    
-                </nav>
+        <div class="row ">
+            <div class="col-md-12 text-center" style="background-color: rgb(48, 113, 242);">
+                <nav class="navbar navbar-expand-lg navbar-light ">                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="booking.php">Booking</a>                                                        
+                        </div>
+                    </div>
+                </nav>                
             </div>            
         </div>                    
     </div>
 
-    <div class="container-fluid"> 
-        <div class="row justify-content-center">
-            <div class="col-md-12 ">
-                <h5>EAD HOTEL</h5>
-                <h5>Welcome to 5 Stars Hotel</h5>    
-            </div>
-        </div>
- 
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-center" >                
-                <div class="card" style="width: 18rem;">
+        
+    <div style="text-align: center; color:cadetblue;">
+        <p> <h5> EAD HOTEL <br>
+        Welcome to 5 Stars Hotel</h5></p>    
+    </div>
+                    
+    <div class="container-fluid "> 
+        <div class="row">
+            <div class="col-md-4 text-center justify-content-end" >                
+                <div class="card shadow bg-white" style="width: 18rem;">
                     <img src="assets\standard.jfif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Standard</h5>
@@ -49,7 +53,7 @@
             </div>
 
             <div class="col-md-3 text-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow bg-white" style="width: 18rem;">
                     <img src="assets\superior.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Superior</h5>
@@ -68,7 +72,7 @@
             </div>
 
             <div class="col-md-4 text-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card shadow bg-white" style="width: 18rem;">
                     <img src="assets\luxury.jfif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Luxury</h5>
