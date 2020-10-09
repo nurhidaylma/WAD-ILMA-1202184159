@@ -28,10 +28,10 @@
                 <h5>Welcome to 5 Stars Hotel</h5>    
             </div>
         </div>
-
+ 
         <div class="row justify-content-center">
-            <div class="col-md-5 text-center" >                
-                <div class="card" style="width: 18rem; margin-left: 200px">
+            <div class="col-md-4 text-center" >                
+                <div class="card" style="width: 18rem;">
                     <img src="assets\standard.jfif" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Standard</h5>
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="col-md-2 text-center">
+            <div class="col-md-3 text-center">
                 <div class="card" style="width: 18rem;">
                     <img src="assets\superior.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="col-md-5 text-center">
+            <div class="col-md-4 text-center">
                 <div class="card" style="width: 18rem;">
                     <img src="assets\luxury.jfif" class="card-img-top" alt="...">
                     <div class="card-body">
