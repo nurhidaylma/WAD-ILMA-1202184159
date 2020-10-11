@@ -86,14 +86,13 @@
                                 ?>                    
                             </td>     
                             <td>
-                                <?php
-                                    $current_price = cek_room($room_type) * $durasi;                        
+                                <?php                                    
                                     function total_price(){
-                                        global $current_price;
+                                        global $durasi, $room_type;
                                         if(!empty($_POST['service'])){
-                                            return $current_price + (20 * count(($_POST['service'])));                               
+                                            return $durasi * (cek_room($room_type) + (20 * count($_POST['service'])));
                                         } elseif (empty(($_POST['service']))) {
-                                            return $current_price;
+                                            return $durasi * cek_room($room_type);
                                         }                                                                                           
                                     }
                                     echo "$ ".total_price();
