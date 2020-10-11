@@ -32,11 +32,12 @@
         Welcome to 5 Stars Hotel</h5></p>    
     </div>
                     
-    <div class="container-fluid "> 
-        <div class="row">
-            <div class="col-md-4 text-center justify-content-end" >                
+    <div class="container-fluid d-flex justify-content-center" > 
+        <form method="post" action="booking.php">
+        <div class="row ">
+            <div class="col-md-4 text-center " >                
                 <div class="card shadow bg-white" style="width: 18rem;">
-                    <img src="assets\standard.jfif" class="card-img-top" alt="...">
+                    <img src="assets\standard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Standard</h5>
                         <h5 >$ 90/Day</h5>
@@ -47,14 +48,13 @@
                         </ul>                                                
                     </div>  
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Book Now</a>                                       
+                        <button type="submit" class="btn btn-primary" name="btnStandard">Book Now</button>                                       
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-3 text-center">
+            <div class="col-md-4 text-center">
                 <div class="card shadow bg-white" style="width: 18rem;">
-                    <img src="assets\superior.jpg" class="card-img-top" alt="...">
+                    <img src="assets\superior_room.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Superior</h5>
                         <h5 >$ 150/Day</h5>
@@ -66,14 +66,14 @@
                         </ul>                                                
                     </div>  
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Book Now</a>                                       
+                        <button type="submit" class="btn btn-primary" name="btnSuperior">Book Now</button>                                       
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 text-center">
                 <div class="card shadow bg-white" style="width: 18rem;">
-                    <img src="assets\luxury.jfif" class="card-img-top" alt="...">
+                    <img src="assets\luxury.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 >Luxury</h5>
                         <h5 >$ 200/Day</h5>
@@ -87,11 +87,12 @@
                         </ul>                                                
                     </div>  
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Book Now</a>                                       
+                        <button type="submit" class="btn btn-primary" name="btnLuxury">Book Now</button>                                       
                     </div>
                 </div>               
             </div>                   
         </div>
+        </form>
     </div>
 </body>
 </html>
