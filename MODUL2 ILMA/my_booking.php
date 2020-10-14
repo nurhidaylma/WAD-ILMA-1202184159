@@ -14,7 +14,7 @@
         $durasi = $_POST['durasi'];
         $room_type = $_POST['room_type'];
         $phone = $_POST['phone'];    
-        $price = 0;
+
         
         function cek_room($room_type){
             global $room_type, $price;
@@ -26,6 +26,7 @@
                 return $price = 200;
             }
         }
+        $price = 0;
     ?>
 
     <div class="container-fluid">
@@ -74,7 +75,7 @@
                             <td><?= $phone ?></td>                        
                             <td>
                                 <?php                        
-                                    if(!empty($_POST['service'])){                            
+                                    if(!empty($_PSOT['service'])){
                                         foreach (($_POST['service']) as $selected){
                                             echo '<ul>
                                                 <li>'.$selected. '</li>
