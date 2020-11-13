@@ -33,7 +33,7 @@
     </div>
                     
     <div class="container-fluid d-flex justify-content-center" > 
-        <form method="get" action="booking.php">
+        <form method="post" action="booking.php">
         <div class="row ">
             <div class="col-md-4 text-center " >                
                 <div class="card shadow bg-white" style="width: 18rem;">
