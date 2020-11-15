@@ -1,4 +1,13 @@
 .navbar {
-    background-color: blue !important;
+    background-color: rgb(35, 136, 219) !important;
+    color: white !important;
+}
+
+.btn {
+    color: white ;
+    border-color: white;
+}
+
+a {
     color: white !important;
 }
