@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <form action="add.php" method="post" enctype="multipart/form-data">
+        <form action="add.php" method="get" enctype="multipart/form-data">
             <div class="row">                    
                 <div class="col-md-6">
                 <!-- card 1 -->                

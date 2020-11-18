@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets\style.css">
     <?php
         include('config.php');                        
-        $select = mysqli_query($conn, "SELECT * FROM event_table");
+        $select = mysqli_query($conn, "DELETE * FROM event_table");
     ?>
 </head>
 <body>        
