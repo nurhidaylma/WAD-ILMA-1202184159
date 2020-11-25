@@ -45,10 +45,10 @@
                     $_SESSION['nama'] = $data_user['nama'];
                     //cookie
                     if(isset($_POST['chRemember'])) {                        
-                        setcookie ('email', $email, time()+ 3600);
-                        setcookie ('password', $pass, time()+ 3600);                                                
+                        setcookie ('email', $email, time()+ 0);
+                        setcookie ('password', $pass, time()+ 0);                                                
                     }                    
-                    header("Location: index.php");
+                    header("Location: login.php");
                 } else {
                     echo "<div class='alert alert-warning' role='alert'>
                         Email atau kata sandi anda salah!
