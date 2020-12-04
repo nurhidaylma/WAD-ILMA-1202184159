@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="container bg-secondary">
+<body class="bg-light">
+    <div class="container-fluid">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">HOME</a>
+                <a class="nav-link text-dark" href="{{ url('/home') }}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">PRODUCT</a>
+                <a class="nav-link text-dark" href="{{ url('/product') }}">PRODUCT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#">ORDER</a>
+                <a class="nav-link text-dark" href="{{ url('/') }}">ORDER</a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link text-dark" href="#" tabindex="-1">HISTORY</a>
+                <a class="nav-link text-dark" href="{{ url('/') }}" tabindex="-1">HISTORY</a>
             </li>
         </ul>
 
-        <div class="container">
+        <div class="container d-flex justify-content-center pt-3">
             @yield('content')
         </div>
     </div>
