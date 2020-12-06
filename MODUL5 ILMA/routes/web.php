@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +23,7 @@ Route::get('/', function () {
 Route::get('/home',function() {
     return view('home');
 });
+
+Route::resource('product', ProductController::class);
+Route::resource('order', OrderController::class);
+Route::resource('history', HistoryController::class);

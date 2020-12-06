@@ -14,13 +14,13 @@
                 <a class="nav-link text-dark" href="{{ url('/home') }}">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="{{ url('/product') }}">PRODUCT</a>
+                <a class="nav-link text-dark" href="{{ route('product.index') }}">PRODUCT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="{{ url('/') }}">ORDER</a>
+                <a class="nav-link text-dark" href="{{ route('order.index') }}">ORDER</a>
             </li>  
             <li class="nav-item">
-                <a class="nav-link text-dark" href="{{ url('/') }}" tabindex="-1">HISTORY</a>
+                <a class="nav-link text-dark" href="{{ route('history.index') }}" tabindex="-1">HISTORY</a>
             </li>
         </ul>
 
