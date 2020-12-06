@@ -24,7 +24,7 @@
             </li>
         </ul>
 
-        <div class="container d-flex justify-content-center pt-3">
+        <div class="container text-center pt-5">
             @yield('content')
         </div>
     </div>
