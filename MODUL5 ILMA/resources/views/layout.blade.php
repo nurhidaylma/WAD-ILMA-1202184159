@@ -25,7 +25,7 @@
         </ul>
 
         <div class="container text-center pt-5">
-            @yield('content')
+            
         </div>
     </div>
 </body>

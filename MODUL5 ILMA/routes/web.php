@@ -24,6 +24,6 @@ Route::get('/home',function() {
     return view('home');
 });
 
-Route::resource('product', ProductController::class);
-Route::resource('order', OrderController::class);
-Route::resource('history', HistoryController::class);
+Route::get('product', ProductController::class);
+Route::get('order', OrderController::class);
+Route::get('history', HistoryController::class);
