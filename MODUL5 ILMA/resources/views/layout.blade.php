@@ -24,6 +24,7 @@
             </li>
         </ul>
 
+        @yield('content')
         <div class="container text-center pt-5">
             
         </div>
